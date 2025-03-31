@@ -76,7 +76,7 @@ body{
 	box-sizing: border-box;
 	background-color: var(--wht);
     background-image: url("images/double-bubble-outline.webp");
-}	
+} 
 
 /* SKIP LINK STYLES */
 #skip{
@@ -109,6 +109,37 @@ header, main, footer{
     background: var(--wht) url("images/concrete_seamless.webp");
 }
 
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+header > a{
+	width: 75px;
+	height: 60px;
+    margin: 0;
+    flex-basis: 15%;
+}
+
+nav {
+    flex-basis: 100%;
+}
+
+nav ul{
+	text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+nav li{
+    flex-basis: 20%;
+}
+
 footer{
     text-align: center;
     padding: 2rem 1rem;
@@ -128,12 +159,6 @@ a:hover{
 a:focus{
     outline: 4px solid var(--coral);
     outline-offset: 1px;
-}
-
-header > a{
-	width: 75px;
-	height: 60px;
-    margin: 0 auto;
 }
 
 header > a:hover svg{
@@ -180,18 +205,6 @@ h3{
 }
 
 /* NAVIGATION STYLES */
-nav ul{
-	text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-evenly;
-}
-
-nav li{
-    flex-basis: 45%;
-}
-
 nav a{
 	text-decoration: none;
 	background-color: var(--dk-blue);
